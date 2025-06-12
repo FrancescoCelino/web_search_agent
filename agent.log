@@ -1,0 +1,210 @@
+2025-06-11 17:22:11,743 - src.utils - INFO - Loaded document: main-MSI_06-03 (1).pdf
+2025-06-11 17:22:11,744 - src.utils - INFO - Total documents loaded: 70
+2025-06-11 17:22:11,748 - src.utils - INFO - Split documents into 148 chunks
+2025-06-11 17:22:24,607 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-11 17:22:24,607 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-11 17:22:26,744 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-11 17:22:29,479 - src.tools - INFO - Vector store initialized successfully
+2025-06-11 17:22:29,512 - src.tools - INFO - Database connection established
+2025-06-11 17:22:29,512 - src.tools - INFO - All tools initialized successfully
+2025-06-11 17:22:29,513 - src.tools - INFO - Available tools: 3
+2025-06-11 17:22:29,522 - src.agent - INFO - AI Agent initialized successfully
+2025-06-11 17:23:15,349 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:23:23,004 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:26:23,947 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:26:28,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:26:29,026 - src.tools - INFO - INSIDE RETRIEVER TOOL
+2025-06-11 17:26:30,544 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:26:37,768 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:30:14,748 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 17:30:22,258 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:06:50,428 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:07:43,546 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:07:43,597 - src.tools - INFO - INSIDE RETRIEVER TOOL
+2025-06-11 19:07:45,140 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:08:25,435 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:08:25,452 - src.tools - INFO - INSIDE RETRIEVER TOOL
+2025-06-11 19:08:27,881 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:08:40,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:08:40,736 - src.tools - INFO - INSIDE RETRIEVER TOOL
+2025-06-11 19:08:42,369 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:09:14,117 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:09:14,144 - src.tools - INFO - INSIDE RETRIEVER TOOL
+2025-06-11 19:09:18,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:10:17,647 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:10:24,894 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 19:31:06,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 11:00:02,068 - src.utils - INFO - Loaded document: main-MSI_06-03 (1).pdf
+2025-06-12 11:00:02,069 - src.utils - INFO - Total documents loaded: 70
+2025-06-12 11:00:02,072 - src.utils - INFO - Split documents into 148 chunks
+2025-06-12 11:00:05,512 - jax._src.path - DEBUG - etils.epath found. Using etils.epath for file I/O.
+2025-06-12 11:00:05,931 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-12 11:00:05,931 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-12 11:00:05,933 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-06-12 11:00:06,109 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-12 11:00:06,260 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-06-12 11:00:06,437 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-06-12 11:00:06,566 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-12 11:00:06,698 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-06-12 11:00:06,824 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-06-12 11:00:06,954 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-06-12 11:00:07,266 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-06-12 11:00:07,442 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6786
+2025-06-12 11:00:07,586 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6786
+2025-06-12 11:00:07,612 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-12 11:00:07,667 - chromadb.config - DEBUG - Starting component System
+2025-06-12 11:00:07,667 - chromadb.config - DEBUG - Starting component Posthog
+2025-06-12 11:00:08,200 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): us.i.posthog.com:443
+2025-06-12 11:00:08,599 - urllib3.connectionpool - DEBUG - https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+2025-06-12 11:00:10,347 - src.tools - INFO - Vector store initialized successfully
+2025-06-12 11:00:10,366 - src.tools - INFO - Database connection established
+2025-06-12 11:00:10,366 - src.tools - INFO - All tools initialized successfully
+2025-06-12 11:00:10,400 - src.agent - INFO - AI Agent initialized successfully
+2025-06-12 11:03:11,327 - src.utils - INFO - Loaded document: main-MSI_06-03 (1).pdf
+2025-06-12 11:03:11,328 - src.utils - INFO - Total documents loaded: 70
+2025-06-12 11:03:11,330 - src.utils - INFO - Split documents into 148 chunks
+2025-06-12 11:03:14,682 - jax._src.path - DEBUG - etils.epath found. Using etils.epath for file I/O.
+2025-06-12 11:03:15,142 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-12 11:03:15,142 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-12 11:03:15,144 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-06-12 11:03:15,361 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-12 11:03:15,496 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-06-12 11:03:15,633 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-06-12 11:03:15,829 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-12 11:03:15,964 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-06-12 11:03:16,110 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-06-12 11:03:16,246 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-06-12 11:03:16,572 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-06-12 11:03:16,756 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6786
+2025-06-12 11:03:16,913 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6786
+2025-06-12 11:03:16,948 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-12 11:03:16,982 - chromadb.config - DEBUG - Starting component System
+2025-06-12 11:03:16,983 - chromadb.config - DEBUG - Starting component Posthog
+2025-06-12 11:03:17,516 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): us.i.posthog.com:443
+2025-06-12 11:03:17,921 - urllib3.connectionpool - DEBUG - https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+2025-06-12 11:03:19,711 - src.tools - INFO - Vector store initialized successfully
+2025-06-12 11:03:19,730 - src.tools - INFO - Database connection established
+2025-06-12 11:03:19,730 - src.tools - INFO - All tools initialized successfully
+2025-06-12 11:03:19,745 - src.agent - INFO - AI Agent initialized successfully
+2025-06-12 11:07:20,590 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.smith.langchain.com:443
+2025-06-12 11:07:20,867 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "GET /info HTTP/1.1" 200 748
+2025-06-12 11:07:20,875 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-c530b5f5-7f9e-401f-8878-e7fb7fff7243', 'json_data': {'messages': [{'content': '& C:/Users/celin/AppData/Local/Programs/Python/Python313/python.exe c:/Users/celin/Desktop/algoverde/web_search_agent/main.py', 'role': 'user'}], 'model': 'gpt-4o-mini', 'stream': False, 'tools': [{'type': 'function', 'function': {'name': 'tavily_search_results_json', 'description': 'A search engine optimized for comprehensive, accurate, and trusted results. Useful for when you need to answer questions about current events. Input should be a search query.', 'parameters': {'properties': {'query': {'description': 'search query to look up', 'type': 'string'}}, 'required': ['query'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'retriever_tool', 'description': 'Tool to Retrieve Semantically Similar documents to answer User Questions related to FutureSmart AI', 'parameters': {'properties': {'question': {'type': 'string'}}, 'required': ['question'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'nl2sql_tool', 'description': 'Tool to Generate and Execute SQL Query to answer User Questions related to chinook DB', 'parameters': {'properties': {'question': {'type': 'string'}}, 'required': ['question'], 'type': 'object'}}}]}}
+2025-06-12 11:07:20,877 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-12 11:07:20,877 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2025-06-12 11:07:20,908 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000015916878EC0>
+2025-06-12 11:07:20,908 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001596AFF5370> server_hostname='api.openai.com' timeout=None
+2025-06-12 11:07:20,928 - langsmith.client - DEBUG - Sending multipart request with context: trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=858a6937-8fb2-468d-bd8a-4f3d348e359c; trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=9569f7de-170a-4085-abc0-0e94ecf80de0; trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=fceb1d58-e821-4524-b4b9-d62bd0706bf1
+2025-06-12 11:07:20,950 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001591695A850>
+2025-06-12 11:07:20,950 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-12 11:07:20,951 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-12 11:07:20,951 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-12 11:07:20,952 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-12 11:07:20,952 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-12 11:07:21,088 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "POST /runs/multipart HTTP/1.1" 202 34
+2025-06-12 11:07:23,182 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 12 Jun 2025 09:07:22 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'politecnico-di-torino-bgszq8'), (b'openai-processing-ms', b'1981'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'1984'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199966'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'10ms'), (b'x-request-id', b'req_fa0640604a21e7baa6af36733c7bc82e'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=cDD6.cXyIfGaFOZzDGDHN.K4ASAIhRYeZckmXTp0vb0-1749719242-1.0.1.1-p2uLoS2Vu1Ut0r5xu9zRUU4_Pv5EQkap4b4s1X4k7s9ns94voxhPchgJ4QToJYh9ZRQSkF3yxQpKe2W.FzPRWoi_HbYS.WMJOqKxY_e_pBs; path=/; expires=Thu, 12-Jun-25 09:37:22 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=tkUI9p5l1TAgbF54y6JYWOiLdTO7vOuAWAMCXEByFxg-1749719242438-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e832837f989468-FCO'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-12 11:07:23,186 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 11:07:23,187 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-12 11:07:23,189 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-12 11:07:23,191 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-12 11:07:23,192 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-12 11:07:23,195 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Thu, 12 Jun 2025 09:07:22 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'politecnico-di-torino-bgszq8'), ('openai-processing-ms', '1981'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '1984'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '200000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '199966'), ('x-ratelimit-reset-requests', '8.64s'), ('x-ratelimit-reset-tokens', '10ms'), ('x-request-id', 'req_fa0640604a21e7baa6af36733c7bc82e'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=cDD6.cXyIfGaFOZzDGDHN.K4ASAIhRYeZckmXTp0vb0-1749719242-1.0.1.1-p2uLoS2Vu1Ut0r5xu9zRUU4_Pv5EQkap4b4s1X4k7s9ns94voxhPchgJ4QToJYh9ZRQSkF3yxQpKe2W.FzPRWoi_HbYS.WMJOqKxY_e_pBs; path=/; expires=Thu, 12-Jun-25 09:37:22 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=tkUI9p5l1TAgbF54y6JYWOiLdTO7vOuAWAMCXEByFxg-1749719242438-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e832837f989468-FCO'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-12 11:07:23,197 - openai._base_client - DEBUG - request_id: req_fa0640604a21e7baa6af36733c7bc82e
+2025-06-12 11:07:23,233 - src.agent - DEBUG - Event 1: ['chatbot']
+2025-06-12 11:07:23,749 - langsmith.client - DEBUG - Sending compressed multipart request with context: trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=fceb1d58-e821-4524-b4b9-d62bd0706bf1; trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=62887d36-c82f-4bea-9f4d-2454b8a08f33; trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=62887d36-c82f-4bea-9f4d-2454b8a08f33; trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=9569f7de-170a-4085-abc0-0e94ecf80de0; trace=858a6937-8fb2-468d-bd8a-4f3d348e359c,id=858a6937-8fb2-468d-bd8a-4f3d348e359c
+2025-06-12 11:07:23,915 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "POST /runs/multipart HTTP/1.1" 202 34
+2025-06-12 11:07:54,250 - langsmith.client - DEBUG - Main thread is dead, stopping compression thread
+2025-06-12 11:07:54,251 - langsmith.client - DEBUG - Compressed traces control thread is shutting down
+2025-06-12 11:07:54,350 - langsmith.client - DEBUG - Main thread is dead, stopping tracing thread
+2025-06-12 11:07:54,350 - langsmith.client - DEBUG - Tracing control thread is shutting down
+2025-06-12 11:07:54,352 - langsmith.client - DEBUG - Closing Client.session
+2025-06-12 11:07:54,860 - langsmith.client - DEBUG - Closing Client.session
+2025-06-12 11:08:08,043 - src.utils - INFO - Loaded document: main-MSI_06-03 (1).pdf
+2025-06-12 11:08:08,043 - src.utils - INFO - Total documents loaded: 70
+2025-06-12 11:08:08,046 - src.utils - INFO - Split documents into 148 chunks
+2025-06-12 11:08:11,452 - jax._src.path - DEBUG - etils.epath found. Using etils.epath for file I/O.
+2025-06-12 11:08:11,868 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-06-12 11:08:11,869 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-12 11:08:11,871 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-06-12 11:08:12,048 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-12 11:08:12,232 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-06-12 11:08:12,363 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-06-12 11:08:12,493 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-12 11:08:12,620 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-06-12 11:08:12,755 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-06-12 11:08:12,882 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-06-12 11:08:13,208 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-06-12 11:08:13,379 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6786
+2025-06-12 11:08:13,536 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6786
+2025-06-12 11:08:13,561 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-06-12 11:08:13,593 - chromadb.config - DEBUG - Starting component System
+2025-06-12 11:08:13,593 - chromadb.config - DEBUG - Starting component Posthog
+2025-06-12 11:08:14,124 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): us.i.posthog.com:443
+2025-06-12 11:08:14,541 - urllib3.connectionpool - DEBUG - https://us.i.posthog.com:443 "POST /batch/ HTTP/1.1" 200 15
+2025-06-12 11:08:16,263 - src.tools - INFO - Vector store initialized successfully
+2025-06-12 11:08:16,282 - src.tools - INFO - Database connection established
+2025-06-12 11:08:16,283 - src.tools - INFO - All tools initialized successfully
+2025-06-12 11:08:16,283 - src.tools - INFO - Web search tool created successfully
+2025-06-12 11:08:16,283 - src.tools - INFO - Web search tool available
+2025-06-12 11:08:16,283 - src.tools - INFO - Document retrieval tool available
+2025-06-12 11:08:16,283 - src.tools - INFO - SQL tool available
+2025-06-12 11:08:16,284 - src.tools - INFO - Total available tools: 3
+2025-06-12 11:08:16,290 - src.agent - INFO - AI Agent initialized successfully
+2025-06-12 11:08:42,868 - src.agent - INFO - PROCESSING QUERY: 'search on the internet who is Riccardo Gioia (a software developer)'
+2025-06-12 11:08:42,875 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.smith.langchain.com:443
+2025-06-12 11:08:43,068 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "GET /info HTTP/1.1" 200 748
+2025-06-12 11:08:43,134 - src.agent - INFO - CHATBOT NODE: Processing user message
+2025-06-12 11:08:43,138 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-8506fc0d-2b15-4db2-ad53-ec9f495d69c4', 'json_data': {'messages': [{'content': 'search on the internet who is Riccardo Gioia (a software developer)', 'role': 'user'}], 'model': 'gpt-4o-mini', 'stream': False, 'tools': [{'type': 'function', 'function': {'name': 'tavily_search_results_json', 'description': 'A search engine optimized for comprehensive, accurate, and trusted results. Useful for when you need to answer questions about current events. Input should be a search query.', 'parameters': {'properties': {'query': {'description': 'search query to look up', 'type': 'string'}}, 'required': ['query'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'retriever_tool', 'description': 'Tool to Retrieve Semantically Similar documents to answer User Questions related to FutureSmart AI', 'parameters': {'properties': {'question': {'type': 'string'}}, 'required': ['question'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'nl2sql_tool', 'description': 'Tool to Generate and Execute SQL Query to answer User Questions related to chinook DB', 'parameters': {'properties': {'question': {'type': 'string'}}, 'required': ['question'], 'type': 'object'}}}]}}
+2025-06-12 11:08:43,138 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-12 11:08:43,139 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=None socket_options=None
+2025-06-12 11:08:43,193 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CF0751CAD0>
+2025-06-12 11:08:43,194 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CF5BC8D1C0> server_hostname='api.openai.com' timeout=None
+2025-06-12 11:08:43,252 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CF07569E50>
+2025-06-12 11:08:43,252 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-12 11:08:43,253 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-12 11:08:43,254 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-12 11:08:43,255 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-12 11:08:43,256 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-12 11:08:43,695 - langsmith.client - DEBUG - Sending compressed multipart request with context: trace=018364d8-e08e-4d1d-b860-c403778da96c,id=018364d8-e08e-4d1d-b860-c403778da96c; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=15956a15-d8f7-414a-9d93-fbf6bf7ddb69; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=e4e124fb-9e1c-4c31-9fcc-70d7121a32c3
+2025-06-12 11:08:43,862 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "POST /runs/multipart HTTP/1.1" 202 34
+2025-06-12 11:08:44,968 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 12 Jun 2025 09:08:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'politecnico-di-torino-bgszq8'), (b'openai-processing-ms', b'1127'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'1131'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9999'), (b'x-ratelimit-remaining-tokens', b'199981'), (b'x-ratelimit-reset-requests', b'8.64s'), (b'x-ratelimit-reset-tokens', b'5ms'), (b'x-request-id', b'req_4b0f0ae643e7befd5aeda8eece08f1bf'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=6HCpiLNY21Zo_fAbnFggjEF7Pa1ekB4J368NoI1pRCg-1749719324-1.0.1.1-uMVxXkxdbliqBc6k91abBR2OFwWSTlgoIJghdDCo3PJ98A2jwJPSWdp9ge7zYSC1nWWSjFcvz49K0RmR4ZdKdVuhjFe_yPTnlhcIq7E5MwU; path=/; expires=Thu, 12-Jun-25 09:38:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=a2GB3nbCbTXB51AOjgdVoSNFF7dDcZ92XEljVWpQPrY-1749719324221-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e83485dac2ea3f-FCO'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-12 11:08:44,975 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 11:08:44,977 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-12 11:08:44,980 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-12 11:08:44,982 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-12 11:08:44,983 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-12 11:08:44,985 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Thu, 12 Jun 2025 09:08:44 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'politecnico-di-torino-bgszq8'), ('openai-processing-ms', '1127'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '1131'), ('x-ratelimit-limit-requests', '10000'), ('x-ratelimit-limit-tokens', '200000'), ('x-ratelimit-remaining-requests', '9999'), ('x-ratelimit-remaining-tokens', '199981'), ('x-ratelimit-reset-requests', '8.64s'), ('x-ratelimit-reset-tokens', '5ms'), ('x-request-id', 'req_4b0f0ae643e7befd5aeda8eece08f1bf'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=6HCpiLNY21Zo_fAbnFggjEF7Pa1ekB4J368NoI1pRCg-1749719324-1.0.1.1-uMVxXkxdbliqBc6k91abBR2OFwWSTlgoIJghdDCo3PJ98A2jwJPSWdp9ge7zYSC1nWWSjFcvz49K0RmR4ZdKdVuhjFe_yPTnlhcIq7E5MwU; path=/; expires=Thu, 12-Jun-25 09:38:44 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=a2GB3nbCbTXB51AOjgdVoSNFF7dDcZ92XEljVWpQPrY-1749719324221-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e83485dac2ea3f-FCO'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-12 11:08:44,988 - openai._base_client - DEBUG - request_id: req_4b0f0ae643e7befd5aeda8eece08f1bf
+2025-06-12 11:08:45,004 - src.agent - INFO - CHATBOT NODE: Response type: AIMessage
+2025-06-12 11:08:45,009 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.tavily.com:443
+2025-06-12 11:08:45,546 - langsmith.client - DEBUG - Sending compressed multipart request with context: trace=018364d8-e08e-4d1d-b860-c403778da96c,id=e4e124fb-9e1c-4c31-9fcc-70d7121a32c3; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=1f20e860-c765-4ef6-a632-99bcdb59b22b; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=1f20e860-c765-4ef6-a632-99bcdb59b22b; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=15956a15-d8f7-414a-9d93-fbf6bf7ddb69; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=53a8cb2c-d3d6-49bb-b734-d78e5609fffa; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=6c19e2c7-7e93-4316-9d0a-0c14b61b4116
+2025-06-12 11:08:45,716 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "POST /runs/multipart HTTP/1.1" 202 34
+2025-06-12 11:08:49,561 - urllib3.connectionpool - DEBUG - https://api.tavily.com:443 "POST /search HTTP/1.1" 200 766
+2025-06-12 11:08:49,574 - src.agent - INFO - CHATBOT NODE: Processing user message
+2025-06-12 11:08:49,581 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-ae3a8122-9f24-4033-a592-6dad05f87adf', 'json_data': {'messages': [{'content': 'search on the internet who is Riccardo Gioia (a software developer)', 'role': 'user'}, {'content': None, 'role': 'assistant', 'tool_calls': [{'type': 'function', 'id': 'call_DbFpG6MMSb0zmWzv4smIIiB7', 'function': {'name': 'tavily_search_results_json', 'arguments': '{"query": "Riccardo Gioia software developer"}'}}]}, {'content': '[{"title": "Riccardo Gioia - Full-stack Developer - Tron Group Holding | LinkedIn", "url": "https://it.linkedin.com/in/riccardo-gioia-8b342a313", "content": "Software Engineer presso Tron Group Holding · Esperienza: Tron Group Holding · Formazione: Università degli studi di Parma · Località: Parma · 59", "score": 0.73914057}, {"title": "20+ \\"Riccardo Gioia\\" profiles - LinkedIn", "url": "https://www.linkedin.com/pub/dir/Riccardo/Gioia", "content": "Riccardo Gioia. Software Engineer presso Tron Group Holding. Parma. Tron Group Holding, +2 more. Università degli studi di Parma", "score": 0.70750624}]', 'role': 'tool', 'tool_call_id': 'call_DbFpG6MMSb0zmWzv4smIIiB7'}], 'model': 'gpt-4o-mini', 'stream': False, 'tools': [{'type': 'function', 'function': {'name': 'tavily_search_results_json', 'description': 'A search engine optimized for comprehensive, accurate, and trusted results. Useful for when you need to answer questions about current events. Input should be a search query.', 'parameters': {'properties': {'query': {'description': 'search query to look up', 'type': 'string'}}, 'required': ['query'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'retriever_tool', 'description': 'Tool to Retrieve Semantically Similar documents to answer User Questions related to FutureSmart AI', 'parameters': {'properties': {'question': {'type': 'string'}}, 'required': ['question'], 'type': 'object'}}}, {'type': 'function', 'function': {'name': 'nl2sql_tool', 'description': 'Tool to Generate and Execute SQL Query to answer User Questions related to chinook DB', 'parameters': {'properties': {'question': {'type': 'string'}}, 'required': ['question'], 'type': 'object'}}}]}}
+2025-06-12 11:08:49,586 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-12 11:08:49,587 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-12 11:08:49,589 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-12 11:08:49,591 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-12 11:08:49,593 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-12 11:08:49,593 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-12 11:08:50,132 - langsmith.client - DEBUG - Sending compressed multipart request with context: trace=018364d8-e08e-4d1d-b860-c403778da96c,id=6c19e2c7-7e93-4316-9d0a-0c14b61b4116; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=53a8cb2c-d3d6-49bb-b734-d78e5609fffa; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=adb6d25c-82ae-4861-a063-e559a20276e9; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=ef34629e-c05a-49f9-b215-6c611db24907
+2025-06-12 11:08:50,305 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "POST /runs/multipart HTTP/1.1" 202 34
+2025-06-12 11:08:51,303 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 12 Jun 2025 09:08:50 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'politecnico-di-torino-bgszq8'), (b'openai-processing-ms', b'1462'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'1474'), (b'x-ratelimit-limit-requests', b'10000'), (b'x-ratelimit-limit-tokens', b'200000'), (b'x-ratelimit-remaining-requests', b'9998'), (b'x-ratelimit-remaining-tokens', b'199826'), (b'x-ratelimit-reset-requests', b'11.29s'), (b'x-ratelimit-reset-tokens', b'52ms'), (b'x-request-id', b'req_9298f4227fc8ac782ce387bab03208be'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e834ad7ad3ea3f-FCO'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-12 11:08:51,306 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-12 11:08:51,307 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-12 11:08:51,310 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-12 11:08:51,311 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-12 11:08:51,312 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-12 11:08:51,313 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers({'date': 'Thu, 12 Jun 2025 09:08:50 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'access-control-expose-headers': 'X-Request-ID', 'openai-organization': 'politecnico-di-torino-bgszq8', 'openai-processing-ms': '1462', 'openai-version': '2020-10-01', 'x-envoy-upstream-service-time': '1474', 'x-ratelimit-limit-requests': '10000', 'x-ratelimit-limit-tokens': '200000', 'x-ratelimit-remaining-requests': '9998', 'x-ratelimit-remaining-tokens': '199826', 'x-ratelimit-reset-requests': '11.29s', 'x-ratelimit-reset-tokens': '52ms', 'x-request-id': 'req_9298f4227fc8ac782ce387bab03208be', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'cf-cache-status': 'DYNAMIC', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '94e834ad7ad3ea3f-FCO', 'content-encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-06-12 11:08:51,315 - openai._base_client - DEBUG - request_id: req_9298f4227fc8ac782ce387bab03208be
+2025-06-12 11:08:51,321 - src.agent - INFO - CHATBOT NODE: Response type: AIMessage
+2025-06-12 11:08:51,333 - src.agent - INFO - GRAPH EXECUTION: 3 events processed
+2025-06-12 11:08:51,334 - src.agent - DEBUG - Event 1: ['chatbot']
+2025-06-12 11:08:51,336 - src.agent - INFO - CHATBOT NODE EXECUTED
+2025-06-12 11:08:51,338 - src.agent - DEBUG - Event 2: ['tools']
+2025-06-12 11:08:51,340 - src.agent - INFO - TOOLS NODE EXECUTED: Tools were actually called!
+2025-06-12 11:08:51,342 - src.agent - DEBUG - Event 3: ['chatbot']
+2025-06-12 11:08:51,344 - src.agent - INFO - CHATBOT NODE EXECUTED
+2025-06-12 11:08:51,346 - src.agent - INFO - FINAL RESPONSE: 446 characters
+2025-06-12 11:08:51,884 - langsmith.client - DEBUG - Sending compressed multipart request with context: trace=018364d8-e08e-4d1d-b860-c403778da96c,id=ef34629e-c05a-49f9-b215-6c611db24907; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=780e8f8d-1be0-438d-8e95-21813848e117; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=780e8f8d-1be0-438d-8e95-21813848e117; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=adb6d25c-82ae-4861-a063-e559a20276e9; trace=018364d8-e08e-4d1d-b860-c403778da96c,id=018364d8-e08e-4d1d-b860-c403778da96c
+2025-06-12 11:08:52,049 - urllib3.connectionpool - DEBUG - https://api.smith.langchain.com:443 "POST /runs/multipart HTTP/1.1" 202 34

@@ -65,7 +65,13 @@ class AIAgent:
     
     def _chatbot_node(self, state: State):
         """Chatbot node function"""
-        return {"messages": [self.llm_with_tools.invoke(state["messages"])]}
+        logger.info("CHATBOT NODE: Processing user message")
+        response = self.llm_with_tools.invoke(state["messages"])
+        
+        # Logging sicuro senza assumere attributi specifici
+        logger.info(f"CHATBOT NODE: Response type: {type(response).__name__}")
+        
+        return {"messages": [response]}
     
     def process_query(self, query: str, thread_id: str = "default") -> str:
         """
@@ -79,25 +85,41 @@ class AIAgent:
             str: Agent response
         """
         try:
+            logger.info(f"PROCESSING QUERY: '{query}'")
             config = {"configurable": {"thread_id": thread_id}}
             
-            # Stream the graph execution
+            # Stream the graph execution e conta gli eventi
             events = list(self.graph.stream(
                 {"messages": [("user", query)]}, 
                 config
             ))
+            
+            logger.info(f"GRAPH EXECUTION: {len(events)} events processed")
+            
+            # Log di ogni evento per debugging
+            for i, event in enumerate(events):
+                logger.debug(f"Event {i+1}: {list(event.keys())}")
+                
+                # Se l'evento contiene "tools", significa che i tool sono stati chiamati
+                if "tools" in event:
+                    logger.info("TOOLS NODE EXECUTED: Tools were actually called!")
+                elif "chatbot" in event:
+                    logger.info("CHATBOT NODE EXECUTED")
             
             # Get the last response
             if events:
                 last_event = events[-1]
                 for value in last_event.values():
                     if "messages" in value and value["messages"]:
-                        return value["messages"][-1].content
+                        response = value["messages"][-1].content
+                        logger.info(f"FINAL RESPONSE: {len(response)} characters")
+                        return response
             
+            logger.warning("NO VALID RESPONSE GENERATED")
             return "I apologize, but I couldn't process your query properly."
             
         except Exception as e:
-            logger.error(f"Error processing query: {e}")
+            logger.error(f"ERROR PROCESSING QUERY: {e}")
             return f"An error occurred while processing your query: {str(e)}"
     
     def get_available_tools(self) -> list:

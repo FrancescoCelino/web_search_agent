@@ -10,10 +10,16 @@ from langchain.chains import create_sql_query_chain
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_community.tools import QuerySQLDatabaseTool
 from langchain_community.utilities import SQLDatabase
-from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from pydantic import BaseModel
+
+# Import corretto per embeddings (fix deprecation warning)
+try:
+    from langchain_huggingface import HuggingFaceEmbeddings as SentenceTransformerEmbeddings
+except ImportError:
+    # Fallback se langchain-huggingface non è installato
+    from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 
 from .config import Config
 from .utils import load_documents, split_documents, clean_sql_query
@@ -88,16 +94,25 @@ class ToolManager:
     
     def get_web_search_tool(self):
         """Get web search tool"""
-        return TavilySearchResults(max_results=Config.MAX_SEARCH_RESULTS)
+        try:
+            # Tool semplice senza logging wrapper per ora
+            web_tool = TavilySearchResults(max_results=Config.MAX_SEARCH_RESULTS)
+            logger.info("Web search tool created successfully")
+            return web_tool
+            
+        except Exception as e:
+            logger.error(f"Error creating web search tool: {e}")
+            return None
     
     def get_retriever_tool(self):
         """Get document retriever tool"""
         @tool(args_schema=RagToolSchema)
         def retriever_tool(question: str) -> str:
             """Tool to Retrieve Semantically Similar documents to answer User Questions related to FutureSmart AI"""
-            logger.info("INSIDE RETRIEVER TOOL")
+            logger.info(f"DOCUMENT RETRIEVAL TOOL CALLED with question: {question}")
             
             if not self.vectorstore:
+                logger.warning("DOCUMENT RETRIEVAL: No vectorstore available")
                 return "Document retrieval not available - no documents loaded"
             
             try:
@@ -107,12 +122,15 @@ class ToolManager:
                 retriever_result = retriever.invoke(question)
                 
                 if not retriever_result:
+                    logger.info("DOCUMENT RETRIEVAL: No relevant documents found")
                     return "No relevant documents found"
                 
-                return "\n\n".join(doc.page_content for doc in retriever_result)
+                result = "\n\n".join(doc.page_content for doc in retriever_result)
+                logger.info(f"DOCUMENT RETRIEVAL RESULT: {len(result)} characters, {len(retriever_result)} documents")
+                return result
                 
             except Exception as e:
-                logger.error(f"Error in document retrieval: {e}")
+                logger.error(f"DOCUMENT RETRIEVAL ERROR: {e}")
                 return f"Error retrieving documents: {str(e)}"
         
         return retriever_tool
@@ -122,9 +140,10 @@ class ToolManager:
         @tool(args_schema=SQLToolSchema)
         def nl2sql_tool(question: str) -> str:
             """Tool to Generate and Execute SQL Query to answer User Questions related to chinook DB"""
-            logger.info("INSIDE NL2SQL TOOL")
+            logger.info(f"SQL TOOL CALLED with question: {question}")
             
             if not self.db:
+                logger.warning("SQL TOOL: No database available")
                 return "SQL database not available"
             
             try:
@@ -140,10 +159,11 @@ class ToolManager:
                 )
 
                 response = chain.invoke({"question": question})
+                logger.info(f"SQL TOOL RESULT: {len(str(response['result']))} characters")
                 return response['result']
                 
             except Exception as e:
-                logger.error(f"Error in SQL query: {e}")
+                logger.error(f"SQL TOOL ERROR: {e}")
                 return f"Error executing SQL query: {str(e)}"
         
         return nl2sql_tool
@@ -154,21 +174,34 @@ class ToolManager:
         
         # Web search tool
         try:
-            tools.append(self.get_web_search_tool())
+            web_tool = self.get_web_search_tool()
+            if web_tool:
+                tools.append(web_tool)
+                logger.info("Web search tool available")
+            else:
+                logger.warning("Web search tool not available")
         except Exception as e:
-            logger.error(f"Web search tool not available: {e}")
+            logger.error(f"Web search tool error: {e}")
         
         # Document retrieval tool
-        if self.vectorstore:
-            tools.append(self.get_retriever_tool())
-        else:
-            logger.warning("Document retrieval tool not available")
+        try:
+            if self.vectorstore:
+                tools.append(self.get_retriever_tool())
+                logger.info("Document retrieval tool available")
+            else:
+                logger.warning("Document retrieval tool not available - no vectorstore")
+        except Exception as e:
+            logger.error(f"Document retrieval tool error: {e}")
         
         # SQL tool
-        if self.db:
-            tools.append(self.get_nl2sql_tool())
-        else:
-            logger.warning("SQL tool not available")
+        try:
+            if self.db:
+                tools.append(self.get_nl2sql_tool())
+                logger.info("SQL tool available")
+            else:
+                logger.warning("SQL tool not available - no database")
+        except Exception as e:
+            logger.error(f"SQL tool error: {e}")
         
-        logger.info(f"Available tools: {len(tools)}")
+        logger.info(f"Total available tools: {len(tools)}")
         return tools

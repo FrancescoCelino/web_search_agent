@@ -11,9 +11,9 @@ langchain-chroma>=0.1.0
 pypdf>=4.0.0
 docx2txt>=0.8
 
-# Database
+# Database & langchain
 langchain-community[sql]>=0.2.0
-
+langchain-huggingface>=0.1.0
 # Utilities
 python-dotenv>=1.0.0
 sentence-transformers>=2.7.0
