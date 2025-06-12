@@ -39,6 +39,9 @@ def main():
         print("  - Type your questions")
         print("  - 'quit' or 'exit' to leave")
         print("  - 'debug on/off' to toggle detailed responses")
+        print("  - 'history' to see conversation history")
+        print("  - 'clear' to clear conversation memory")
+        print("  - 'summary' to see conversation summary")
         print("-" * 50)
         
         debug_mode = False
@@ -49,7 +52,7 @@ def main():
                 user_input = input("\nYou: ").strip()
                 
                 if user_input.lower() in ["quit", "exit", "q", "bye"]:
-                    print("👋 Goodbye!")
+                    print("Goodbye!")
                     break
                 
                 # Toggle debug mode
@@ -60,6 +63,33 @@ def main():
                 elif user_input.lower() == "debug off":
                     debug_mode = False
                     print("Debug mode OFF - normal responses")
+                    continue
+
+                # memory commands
+                elif user_input.lower() == "history":
+                    history = agent.get_conversation_history
+                    if not history:
+                        print("No history available.")
+                    else:
+                        print(f"Convo history ({len(history)} messages):")
+                        print("-" * 60)
+                        for role, content in history: 
+                            prefix = "👤" if role == "user" else "🤖"
+                            print(f"{prefix} {role}: {content[:150]}{'...' if len(content) > 150 else ''}")
+                        print("-" * 60)
+                    continue
+
+                elif user_input.lower() == "clear" or user_input.lower() == "clr":
+                    agent.clear_conversation()
+                    print("Memory cleared")
+                    continue
+
+                elif user_input.lower() == "summary":
+                    summary = agent.get_conversation_summary()
+                    print("Convo summary:")
+                    print("-" * 60)
+                    print(summary)
+                    print("-" * 60)
                     continue
                 
                 if not user_input:
